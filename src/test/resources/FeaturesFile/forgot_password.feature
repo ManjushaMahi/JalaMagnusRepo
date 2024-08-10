@@ -1,3 +1,4 @@
+@test3
 Feature: Forgot Password functionality
 
   Scenario: Enter valid email

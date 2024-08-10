@@ -1,3 +1,4 @@
+@test4
 Feature: Employee Tab functionality
 
   Scenario: Enter employee details and save

@@ -1,3 +1,4 @@
+@test2
 Feature: Admin Login functionality
 
   Scenario: Click on admin login tab and enter valid credentials

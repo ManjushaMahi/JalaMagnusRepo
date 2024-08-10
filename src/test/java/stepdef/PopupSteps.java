@@ -13,7 +13,7 @@ public class PopupSteps {
 
     @Given("I am on the Magnus home page")
     public void i_am_on_the_magnus_home_page() {
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        
         driver = new ChromeDriver();
         driver.get("https://magnus.jalatechnologies.com/Home/Index");
     }
@@ -22,7 +22,7 @@ public class PopupSteps {
     public void i_should_find_the_popup_and_print_the_message_on_the_screen() {
         try {
            // WebDriverWait wait = new WebDriverWait(driver, 10);
-           // wait.until(ExpectedConditions.alertIsPresent());
+           //wait.until(ExpectedConditions.alertIsPresent());
             Alert alert = driver.switchTo().alert();
             String alertMessage = alert.getText();
             System.out.println("Popup message: " + alertMessage);

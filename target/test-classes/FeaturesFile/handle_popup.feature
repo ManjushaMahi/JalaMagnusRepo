@@ -1,3 +1,4 @@
+@test8
 Feature: Handle popup on Magnus website
 
   Scenario: Find and print the popup message on the Magnus home page

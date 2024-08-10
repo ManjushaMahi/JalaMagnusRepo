@@ -1,3 +1,4 @@
+@test5
 Feature: Navigation and Interaction on Magnus Website
 
   Scenario: Navigate and interact with menu options

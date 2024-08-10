@@ -16,7 +16,7 @@ public class NavigationSteps {
 
     @Given("I am on the Magnus home page")
     public void i_am_on_the_magnus_home_page() {
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        
         driver = new ChromeDriver();
         driver.get("https://magnus.jalatechnologies.com/Home/Index");
     }

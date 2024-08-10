@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -14,10 +15,10 @@ public class BrokenLinksSteps {
     WebDriver driver;
 
     @Given("I am on the Magnus home page")
-    public void i_am_on_the_magnus_home_page() {
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+    public void finding_the_broken_links() {
+        
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://magnus.jalatechnologies.com/Home/Index");
     }
 
